@@ -3,7 +3,7 @@ import datetime;
 
 class GitTag:
 
-	def __init__(self, gitUser, gitRepoName, authNToken = "", ):
+	def __init__(self, gitUser, gitRepoName, authNToken = ""):
 		self.gitUser = gitUser;
 		self.gitRepoName = gitRepoName;
 		self.authNToken = authNToken;
@@ -53,7 +53,6 @@ class GitTag:
 		print tagSHA, response.json(); 
 
 		self.createRef(tagSHA, tag);
-
 
 
 g = GitTag("alekh2", "tagtest", "auth_token");
